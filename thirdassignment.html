@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zubair third assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: aliceblue;
+            color: darkslategray;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: steelblue;
+            color: white;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 8px;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        form input, form select, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form .gender-options {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        form button {
+            background-color: seagreen;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        form button:hover {
+            background-color: mediumseagreen;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid gray;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: steelblue;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DTMP : Balochistan</h1>
+        <p>Basic Registeration Form For Students</p>
+    </header>
+
+    <section>
+        <h2>Fill out-the Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password">
+
+            <label>Gender:</label>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="pakistan">Pakistan</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+                <option value="japan">Japan</option>
+                <option value="bangladesh">Bangladesh</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your address"></textarea>
+
+            <label for="profile-picture">Profile Picture:</label>
+            <input type="file" id="profile-picture" name="profile-picture">
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Share your feedback"></textarea>
+
+            <label for="rating">Rating (1-10):</label>
+            <input type="number" id="rating" name="rating" min="1" max="10">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Student Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zubair</td>
+                    <td>14</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Anas</td>
+                    <td>15</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Mazz</td>
+                    <td>16</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Jafar</td>
+                    <td>14</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Wakar</td>
+                    <td>17</td>
+                    <td>A+</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
