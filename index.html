@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Web Bar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet"> <!-- Bubbly font -->
+    <style>
+        /* Global styles for the body */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Flexible Bar */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;  /* Full width */
+            background-color: white;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            height: 50px;  /* Adjustable height */
+            z-index: 1000;
+        }
+
+        /* Hamburger Menu (3-line button) */
+        .hamburger {
+            background: none;
+            border: none;
+            color: #d11a2a;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Burger King Text */
+        .burger-king {
+            font-family: 'Baloo 2', cursive; /* Bubbly font */
+            font-size: 35px;
+            color: #d11a2a;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        /* View Cart Button */
+        .view-cart-btn {
+            padding: 10px 20px;
+            background-color: #d11a2a;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 14px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+        }
+
+        /*Adjust the position of View Cart Button (to move left or right) */
+        .view-cart-btn.adjust-left {
+            right: 60px; /* Example: Move the button left */
+        }
+
+        .view-cart-btn.adjust-right {
+            right: 10px; /* Example: Move the button right */
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .header {
+                height: 60px;
+            }
+
+            .burger-king {
+                font-size: 24px;
+            }
+
+            .view-cart-btn {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger">&#9776;</button>
+
+        <!-- Burger King Text in the Center -->
+        <span class="burger-king">BURGER KING</span>
+
+        <!-- View Cart Button -->
+        <button class="view-cart-btn adjust-left">View Cart</button>
+    </div>
+
+    
+</body>
+</html>
+
+    
+
+      
+
+
+    <div style="display: flex; justify-content: center; gap: 10px; margin: 0 50px;">
+        <!-- third  c-->
+        <div style="width: 600px; border: 1px solid #ccc; border-radius: 10px; text-align: center;">
+            <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/f62d08215679233f480247036dba23e2d5bbaf3f-835x403.png?w=812&q=80&fit=max&auto=format"
+                alt="Image 4" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                <h1 style="font-size: x-large;">Make Your Holiday Colorful</h1>
+            <p style="margin: 5px; padding: 5px; font-size: 14px;">Royal Perks members! Take a break, color in some of your BK® Village favorites — even customize with stickers. Let your creativity shine, your way!</p>
+        </div>
+    
+        <!-- fourth  c-->
+        <div style="width: 600px; border: 1px solid #ccc; border-radius: 10px; text-align: center;">
+            <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/81c7ce20dfc8958c9266b9a70b8495dda29d4067-2000x1000.png?w=812&q=80&fit=max&auto=format"
+                alt="Image 5" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                <h1 style="font-size: x-large;">Warm up your holidays with a Melt Meal!</h1>
+            <p style="margin: 5px; padding: 5px; font-size: 14px;">Cozy days call for cozy flavors. Add some warm, cheesy goodness to your holiday season with one of our digital-exclusive Melt Meals! </p>
+        </div>
+        
+        
+</body>
+
+</html>
