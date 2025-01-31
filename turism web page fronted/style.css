@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+header {
+    background: linear-gradient(90deg, #314961, #B68250);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+section {
+    padding: 50px;
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.place {
+    width: 320px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.place:hover {
+    transform: scale(1.05);
+}
+.place img {
+    width: 100%;
+    border-radius: 12px;
+}
+#culture {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#culture h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.culture-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.culture-item {
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.culture-item:hover {
+    transform: scale(1.05);
+}
+
+.culture-item img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.culture-item h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+.culture-item p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+footer {
+    background: #47A1C4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
